@@ -7,7 +7,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 
-import com.edsoncorp.hrworker.entities.Worker;
+import com.edsoncorp.hrworker.model.entities.Worker;
 import com.edsoncorp.hrworker.repository.WorkerRepository;
 
 @Configuration

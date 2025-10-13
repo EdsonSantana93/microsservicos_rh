@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.edsoncorp.hrworker.entities.Worker;
+import com.edsoncorp.hrworker.model.dto.WorkerResponseDTO;
 import com.edsoncorp.hrworker.service.IWorkerService;
 
 @RestController()
@@ -20,14 +20,14 @@ public class WorkerController {
 	
 	
 	@GetMapping()
-	public ResponseEntity<List<Worker>> findAll(){
-		List<Worker> response = service.findAll();
+	public ResponseEntity<List<WorkerResponseDTO>> findAll(){
+		List<WorkerResponseDTO> response = service.findAll();
 		return ResponseEntity.ok().body(response);
 	}
 	
 	@GetMapping("/{id}")
-	public ResponseEntity<Worker> findById(@PathVariable Long id) {
-		Worker response = service.findById(id);
+	public ResponseEntity<WorkerResponseDTO> findById(@PathVariable Long id) {
+		WorkerResponseDTO response = service.findById(id);
 		return ResponseEntity.ok().body(response);
 	}
 }

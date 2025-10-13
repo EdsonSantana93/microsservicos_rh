@@ -1,4 +1,4 @@
-package com.edsoncorp.hrworker.entities;
+package com.edsoncorp.hrworker.model.entities;
 
 import java.io.Serializable;
 import java.util.Objects;
