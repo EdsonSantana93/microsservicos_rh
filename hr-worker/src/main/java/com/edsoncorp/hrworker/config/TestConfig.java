@@ -19,7 +19,7 @@ public class TestConfig implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		Worker worker1 = new Worker(null, "Bob", 2000.0);
+		Worker worker1 = new Worker(null, "Bob", 200.0);
 		Worker worker2 = new Worker(null, "Maria", 300.0);
 		Worker worker3 = new Worker(null, "Alex", 250.0);
 
