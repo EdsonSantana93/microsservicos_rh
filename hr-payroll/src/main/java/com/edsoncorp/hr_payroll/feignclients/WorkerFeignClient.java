@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import com.edsoncorp.hr_payroll.model.entities.Worker;
 
 @Component
-@FeignClient(name = "hr-workers", path = "/workers")
-public interface WorkerFeignCliente {
+@FeignClient(name = "hr-worker", path = "/workers")
+public interface WorkerFeignClient {
 	
 	@GetMapping("/{id}")
 	ResponseEntity<Worker> findById(@PathVariable Long id);

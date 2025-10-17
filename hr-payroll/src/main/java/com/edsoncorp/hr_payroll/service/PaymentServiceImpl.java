@@ -3,7 +3,7 @@ package com.edsoncorp.hr_payroll.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.edsoncorp.hr_payroll.feignclients.WorkerFeignCliente;
+import com.edsoncorp.hr_payroll.feignclients.WorkerFeignClient;
 import com.edsoncorp.hr_payroll.model.entities.Payment;
 import com.edsoncorp.hr_payroll.model.entities.Worker;
 
@@ -11,7 +11,7 @@ import com.edsoncorp.hr_payroll.model.entities.Worker;
 public class PaymentServiceImpl implements IPayment {
 	
 	@Autowired
-	private WorkerFeignCliente workerFeignCliente;
+	private WorkerFeignClient workerFeignCliente;
 	
 	
 	@Override
